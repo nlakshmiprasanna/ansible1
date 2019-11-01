@@ -1,0 +1,81 @@
+2019-11-01 05:57:22,449 p=2530 u=prasanna |    hosts (1):
+2019-11-01 05:57:22,449 p=2530 u=prasanna |      34.70.199.136
+2019-11-01 05:57:56,733 p=2536 u=prasanna |    hosts (1):
+2019-11-01 05:57:56,733 p=2536 u=prasanna |      34.70.199.136
+2019-11-01 06:38:05,134 p=3234 u=prasanna |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/prasanna/text.yaml': line 3, column 2, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: text
+ become : yes
+ ^ here
+
+2019-11-01 06:47:06,310 p=3427 u=prasanna |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/prasanna/text.yaml': line 3, column 2, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: text
+ become : yes
+ ^ here
+
+2019-11-01 06:52:56,661 p=3519 u=prasanna |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/prasanna/text.yaml': line 3, column 2, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: text
+ become : yes
+ ^ here
+
+2019-11-01 06:57:26,431 p=3583 u=prasanna |  PLAY [text] ************************************************************************************************************************************************************
+2019-11-01 06:57:26,440 p=3583 u=prasanna |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-01 06:57:28,284 p=3583 u=prasanna |  ok: [34.70.199.136]
+2019-11-01 06:57:28,302 p=3583 u=prasanna |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-11-01 06:57:28,393 p=3583 u=prasanna |  An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2019-11-01 06:57:28,394 p=3583 u=prasanna |  fatal: [34.70.199.136]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/prasanna/text.txt' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-11-01 06:57:28,395 p=3583 u=prasanna |  PLAY RECAP *************************************************************************************************************************************************************
+2019-11-01 06:57:28,395 p=3583 u=prasanna |  34.70.199.136              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-01 06:58:33,055 p=3628 u=prasanna |  PLAY [text] ************************************************************************************************************************************************************
+2019-11-01 06:58:33,064 p=3628 u=prasanna |  TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-01 06:58:34,561 p=3628 u=prasanna |  ok: [34.70.199.136]
+2019-11-01 06:58:34,579 p=3628 u=prasanna |  TASK [Copies files to remote locations] ********************************************************************************************************************************
+2019-11-01 06:58:35,992 p=3628 u=prasanna |  changed: [34.70.199.136]
+2019-11-01 06:58:35,994 p=3628 u=prasanna |  PLAY RECAP *************************************************************************************************************************************************************
+2019-11-01 06:58:35,995 p=3628 u=prasanna |  34.70.199.136              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-01 07:31:08,500 p=4385 u=prasanna |  34.70.199.136 | CHANGED | rc=0 >>
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                1
+On-line CPU(s) list:   0
+Thread(s) per core:    1
+Core(s) per socket:    1
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 63
+Model name:            Intel(R) Xeon(R) CPU @ 2.30GHz
+Stepping:              0
+CPU MHz:               2300.000
+BogoMIPS:              4600.00
+Hypervisor vendor:     KVM
+Virtualization type:   full
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              46080K
+NUMA node0 CPU(s):     0
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc eagerfpu pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm invpcid_single ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt arat md_clear spec_ctrl intel_stibp arch_capabilities
+

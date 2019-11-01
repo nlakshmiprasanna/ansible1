@@ -1,0 +1,15 @@
+---
+- hosts: text
+  become: yes
+  become_method: sudo
+
+  tasks:
+
+    - name: Copies files to remote locations
+      copy:
+        src: /home/prasanna/text.txt
+        dest: /tmp
+        owner: prasanna
+        group: prasanna
+        mode: 0644
+
